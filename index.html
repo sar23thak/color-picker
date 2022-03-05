@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <link rel="stylesheet" type="text/css" href="stylepart.css">
+  </head>
+  <style>
+	  body {
+    margin: 0;
+  }
+  .heading {
+    margin: 0;
+    background-color: black;
+    display: block;
+    font-family: serif;
+    padding-top: 2px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    height: 160px;
+  }
+  .container2 {
+    background-color: rgb(187, 193, 197);
+    height: 50px;
+    text-align: center;
+  }
+  #reset {
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 10px;
+    height: 30px;
+    font-family: "Akaya Telivigala", cursive;
+    background-color: rgb(41, 82, 105);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s;
+  }
+  #reset:hover {
+    background-color: rgb(1, 180, 180);
+  }
+  .item {
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 10px;
+    height: 30px;
+    font-family: "Akaya Telivigala", cursive;
+    background-color: rgb(41, 82, 105);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s;
+  }
+  .item :focus {
+    background-color: rgb(240, 0, 0);
+  }
+  .item:hover {
+    background-color: rgb(1, 180, 180);
+  }
+
+  #message {
+    width: 25%;
+    display: inline-block;
+  }
+  .container3 {
+    background-color: rgb(238, 238, 238);
+    height: 500px;
+  }
+  .phase {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    /* flex-direction: row; */
+    padding-left: 470px;
+  }
+  .phased {
+    display: flex;
+    padding-left: 470px;
+  }
+  .button {
+    background-color: black;
+    height: 180px;
+    width: 180px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  </style>
+<body>
+	<div class="container">
+		<header class="heading">
+			<h1>The Color Picker Game</h1>
+			<h2>Guess the correct color plate for given RBG code!</h2>
+			<h1 id="displaycolor">RGB</h1>
+		</header>
+	</div>
+	<div class="container2">
+		<button id="reset">Reset the colors</button>
+		<span id="message"></span>
+		<button class="item">Easy</button>
+		<button class="item two">Hard</button>
+	</div>
+	<div class="container3">
+		<div class="phase">
+			<button class="button"> </button>
+			<button class="button"> </button>
+			<button class="button"> </button>
+		</div>
+		<div class="phased">
+			<button class="button"> </button>
+			<button class="button"> </button>
+			<button class="button"> </button>
+		</div>
+	</div>
+	<script type="text/javascript" src="java.js"></script>
+</body>
+</html>
